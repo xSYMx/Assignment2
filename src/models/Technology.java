@@ -2,9 +2,16 @@ package models;
 
 public abstract class Technology {
     private double price = 0;
-    private String id = "";
-    private String modelName = "0";
+    private String id = "unknown";
+    private String modelName = "";
     private Manufacturer manufacturer;
+
+    public Technology(String modelName, double price, Manufacturer manufacturer, String id) {
+        setModelName(modelName);
+        setPrice(price);
+        setManufacturer(manufacturer);
+        setId(id);
+    }
 
     public double getPrice() {
         return price;
@@ -36,5 +43,16 @@ public abstract class Technology {
 
     public void setManufacturer(Manufacturer manufacturer) {
         this.manufacturer = manufacturer;
+    }
+
+    public abstract double getInsurancePremium();
+    public abstract String connectToInternet();
+
+    @Override
+    public String toString() {
+        return "price:" + price + '\''+
+                "id:" + id + '\'' +
+                "modelName:" + modelName + '\'' +
+                "manufacturer: " + manufacturer ;
     }
 }
