@@ -225,6 +225,8 @@ public class TechnologyDeviceAPI implements ISerializer {
 
     //TODO - sort methods
 
+    
+
     //TODO Top 5 methods
 
 
@@ -254,4 +256,6 @@ public class TechnologyDeviceAPI implements ISerializer {
         return file.getName();
     }
 
+    public void sortByPriceDescending() {
+    }
 }

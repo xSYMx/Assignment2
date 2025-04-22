@@ -7,6 +7,7 @@
     <list default="true" id="44583587-1c9c-4945-b5a5-61c09c489717" name="更改" comment="4/11 write basic codes for models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
