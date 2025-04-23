@@ -46,6 +46,7 @@ public abstract class Technology {
     }
 
     public abstract double getInsurancePremium();
+
     public abstract String connectToInternet();
 
     @Override

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44583587-1c9c-4945-b5a5-61c09c489717" name="更改" comment="4/11 write basic codes for models">
+    <list default="true" id="44583587-1c9c-4945-b5a5-61c09c489717" name="更改" comment="4/16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Tablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Tablet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Technology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Technology.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,7 @@
 }</component>
   <component name="ProjectId" id="2vOXquyjoNEn6zWRYkG2a4cnXux" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -62,11 +65,19 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/PF2/ShopV6.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.Driver.executor&quot;: &quot;Run&quot;
   }
 }</component>
@@ -135,6 +146,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -143,6 +162,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744017287755</updated>
+      <workItem from="1744966020889" duration="643000" />
+      <workItem from="1744966853832" duration="194000" />
+      <workItem from="1744967586554" duration="47000" />
+      <workItem from="1745222611274" duration="3308000" />
+      <workItem from="1745308858743" duration="1403000" />
+      <workItem from="1745311740966" duration="869000" />
+      <workItem from="1745312679033" duration="477000" />
+      <workItem from="1745313166843" duration="24000" />
+      <workItem from="1745313200702" duration="1038000" />
+      <workItem from="1745394732802" duration="8620000" />
     </task>
     <task id="LOCAL-00001" summary="4/11 write basic codes for models">
       <option name="closed" value="true" />
@@ -152,11 +181,27 @@
       <option name="project" value="LOCAL" />
       <updated>1744354957061</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="4/16">
+      <option name="closed" value="true" />
+      <created>1744774511949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744774511949</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="4/11 write basic codes for models" />
-    <option name="LAST_COMMIT_MESSAGE" value="4/11 write basic codes for models" />
+    <MESSAGE value="4/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="4/16" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

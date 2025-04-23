@@ -16,6 +16,8 @@ public class Tablet extends ComputingDevice {
         this.operatingSystem = operatingSystem;
     }
 
+    
+
     @Override
     public double getInsurancePremium() {
         return getPrice() * 0.01;

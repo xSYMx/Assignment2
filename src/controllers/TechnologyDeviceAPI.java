@@ -63,6 +63,7 @@ public class TechnologyDeviceAPI implements ISerializer {
 
 
 
+
     //TODO - Number methods
 
     public int numberOfTechnologyDevices() {
@@ -223,15 +224,47 @@ public class TechnologyDeviceAPI implements ISerializer {
 
 
 
+
     //TODO - sort methods
 
-    
+    public void sortByPriceDescending() {
+        technologyList.sort((t1, t2) -> Double.compare(t2.getPrice(), t1.getPrice()));
+    }
+
+    public void sortByPriceAscending() {
+        technologyList.sort((t1, t2) -> Double.compare(t2.getPrice(), t1.getPrice()));
+    }
+
 
     //TODO Top 5 methods
 
+    public ArrayList<Technology> topFiveMostExpensiveTechnology() {
+        ArrayList<Technology> sortedList = new ArrayList<>(technologyList);
+        sortByPriceDescending();
+        return new ArrayList<>(sortedList.subList(0, Math.min(5, sortedList.size())));
+    }
 
+    public ArrayList<Technology> topFiveMostExpensiveSmartWatch() {
+        ArrayList<Technology> smartWatches = new ArrayList<>();
+        for (Technology tech : technologyList) {
+            if (tech instanceof models.SmartWatch) {
+                smartWatches.add(tech);
+            }
+        }
+        Collections.sort(smartWatches, (t1, t2) -> Double.compare(t2.getPrice(), t1.getPrice()));
+        return new ArrayList<>(smartWatches.subList(0, Math.min(5, smartWatches.size())));
+    }
 
-
+    public ArrayList<Technology> topFiveMostExpensiveTablet() {
+        ArrayList<Technology> tablets = new ArrayList<>();
+        for (Technology tech : technologyList) {
+            if (tech instanceof models.Tablet) {
+                tablets.add(tech);
+            }
+        }
+        Collections.sort(tablets, (t1, t2) -> Double.compare(t2.getPrice(), t1.getPrice()));
+        return new ArrayList<>(tablets.subList(0, Math.min(5, tablets.size())));
+    }
 
     // TODO Persistence methods
 
@@ -256,6 +289,4 @@ public class TechnologyDeviceAPI implements ISerializer {
         return file.getName();
     }
 
-    public void sortByPriceDescending() {
-    }
 }
