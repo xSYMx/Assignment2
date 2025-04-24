@@ -3,9 +3,6 @@ package controllers;
 import models.*;
 
 import utils.ISerializer;
-import utils.OperatingSystemUtility;
-
-import utils.Utilities;
 
 import java.io.*;
 import java.util.*;
@@ -125,6 +122,51 @@ public class TechnologyDeviceAPI implements ISerializer {
         return listed;
     }
 
+    public String listAllSmartBands(){
+        boolean iffound = false;
+        String listed = "";
+        for (Technology tech : technologyList) {
+            if (tech instanceof models.SmartBand) {
+                listed += technologyList.indexOf(tech) + ": " + tech.toString() + "\n";
+                iffound = true;
+            }
+            if (!iffound) {
+                return "No SmartBand Devices";
+            }
+        }
+        return listed;
+    }
+
+    public String listAllSmartWatches(){
+        boolean iffound = false;
+        String listed = "";
+        for (Technology tech : technologyList) {
+            if (tech instanceof models.SmartWatch) {
+                listed += technologyList.indexOf(tech) + ": " + tech.toString() + "\n";
+                iffound = true;
+            }
+            if (!iffound) {
+                return "No SmartWatch Devices";
+            }
+        }
+        return listed;
+    }
+
+    public String listAllTablets(){
+       boolean iffound = false;
+       String listed = "";
+       for (Technology tech : technologyList) {
+           if (tech instanceof models.Tablet) {
+               listed += technologyList.indexOf(tech) + ": " + tech.toString() + "\n";
+               iffound = true;
+           }
+           if (!iffound) {
+               return "No Tablet Devices";
+           }
+       }
+       return listed;
+    }
+
     public String listAllTechnologyAbovePrice(double price) {
         boolean iffound = false;
         String listed = "";
@@ -155,7 +197,25 @@ public class TechnologyDeviceAPI implements ISerializer {
         return listed;
     }
 
-    public String listAllTechDevicesByChosenManufacturer(String manufacturerName) {
+    public String listAllTabletsByOperatingSystem(String OS){
+        boolean iffound = false;
+        String listed = "";
+        for (Technology tech : technologyList) {
+            if (tech instanceof models.Tablet) {
+                Tablet tablet = (Tablet) tech;
+                if (tablet.getOperatingSystem().equals(OS)) {
+                    listed += technologyList.indexOf(tech) + ": " + tech.toString() + "\n";
+                    iffound = true;
+                }
+            }
+        }
+        if (!iffound) {
+            listed = "No tablet with Operating System " + OS;
+        }
+        return listed;
+    }
+
+    public String listAllTechDevicesByGivenManufacturer(String manufacturerName) {
         String listed = "";
         boolean iffound = false;
         for (Technology tech : technologyList) {
@@ -169,6 +229,8 @@ public class TechnologyDeviceAPI implements ISerializer {
         }
         return listed;
     }
+
+
 
 
     //the following is isValidId can be updated to suit your code

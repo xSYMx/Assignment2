@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Tablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Tablet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Technology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Technology.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +170,7 @@
       <workItem from="1745313166843" duration="24000" />
       <workItem from="1745313200702" duration="1038000" />
       <workItem from="1745394732802" duration="8620000" />
+      <workItem from="1745481396263" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="4/11 write basic codes for models">
       <option name="closed" value="true" />
