@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SmartWatchTest {
     private  SmartWatch smartWatch;
+    private Manufacturer manufacturer;
 
     @BeforeEach
     void setUp() {
@@ -19,16 +20,42 @@ class SmartWatchTest {
     @AfterEach
     void tearDown() {
         smartWatch=null;
+        manufacturer=null;
+    }
+    @Test
+    void testInitialization() {
+        assertEquals("TestSmartWatch", smartWatch.getModelName());
+        assertEquals(100, smartWatch.getPrice());
+        assertSame(manufacturer, smartWatch.getManufacturer());
+        assertEquals("ID789", smartWatch.getId());
+        assertEquals("Aluminum", smartWatch.getMaterial());
+        assertEquals("Large", smartWatch.getSize());
+        assertEquals("AMOLED", smartWatch.getDisplayType());
     }
 
+
     @Test
-    void setDisplayType() {
+    void testsetDisplayType() {
         smartWatch.setDisplayType("OLED");
         assertEquals("OLED",smartWatch.getDisplayType());
         smartWatch.setDisplayType("LCD");
         assertEquals("LCD",smartWatch.getDisplayType());
         smartWatch.setDisplayType(null);
         assertNull(smartWatch.getDisplayType());
+    }
+    @Test
+    void testGetInsurancePremium() {
+        double expectedPremium = 200 * 0.06; // 12.0
+        assertEquals(expectedPremium, smartWatch.getInsurancePremium(), 0.001);
+
+
+        SmartWatch cheapWatch = new SmartWatch("Cheap", 50, manufacturer, "ID111", "Plastic", "Small", "TFT");
+        assertEquals(3.0, cheapWatch.getInsurancePremium(), 0.001);
+    }
+    @Test
+    void testConnectToInternet() {
+        String expected = "Connects to the internet via Bluetooth";
+        assertEquals(expected, smartWatch.connectToInternet());
     }
 
     @Test

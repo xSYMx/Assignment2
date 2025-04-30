@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="44583587-1c9c-4945-b5a5-61c09c489717" name="更改" comment="4/16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TechnologyDeviceAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/controllers/TechnologyDeviceAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/controllers/TechnologyDeviceAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/main/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/main/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/models/Tablet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/models/Tablet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/models/Technology.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/models/Technology.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/SmartBandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/SmartBandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/SmartWatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/SmartWatchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/WearableDeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/WearableDeviceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,36 +55,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JUnit.SmartBandTest.setHeartRateMonitor.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SmartBandTest.testConstuctor.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SmartWatchTest.testToString.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PF2/ShopV6.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.Driver.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.SmartBandTest.setHeartRateMonitor.executor": "Run",
+    "JUnit.SmartBandTest.testConstuctor.executor": "Run",
+    "JUnit.SmartBandTest.testGetInsurancePremium.executor": "Debug",
+    "JUnit.SmartWatchTest.executor": "Run",
+    "JUnit.SmartWatchTest.testInitialization.executor": "Run",
+    "JUnit.SmartWatchTest.testToString.executor": "Run",
+    "JUnit.SmartWatchTest.testsetDisplayType.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$CRUDMethods.addNewTechnologySameId.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$CRUDMethods.deleteTechnologyById.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$CRUDMethods.deleteTechnologyDeviceByIndex.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$CRUDMethods.updateTablet.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$ListingMethods.listAllReturnsNoTechnologyStoredWhenArrayListIsEmpty.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$ListingMethods.listAllReturnsTechnologyDevicesStoredWhenArrayListHasTechnologyDevicesStored.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$ListingMethods.listBySelectedYearReturnsNoTechnologyDevicesWhenNoneExistForEnteredPrice.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$ReportingMethods.numberOfTechnologyByChosenManufacturer.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$SearchingMethods.isValidId.executor": "Run",
+    "JUnit.TechnologyDeviceAPITest$SortingMethods.sortByCostDescendingReOrdersList.executor": "Run",
+    "JUnit.WearableDeviceTest.getInsurancePremium.executor": "Run",
+    "JUnit.WearableDeviceTest.getMaterial.executor": "Run",
+    "JUnit.WearableDeviceTest.getSize.executor": "Run",
+    "JUnit.WearableDeviceTest.setMaterial.executor": "Run",
+    "JUnit.WearableDeviceTest.setSize.executor": "Run",
+    "JUnit.WearableDeviceTest.testToString.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/PF2/ShopV6.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Driver.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -88,38 +114,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SmartWatchTest.testToString">
-    <configuration name="SmartBandTest.setHeartRateMonitor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Assignment2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.SmartBandTest" />
-      <option name="METHOD_NAME" value="setHeartRateMonitor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmartBandTest.testConstuctor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Assignment2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.SmartBandTest" />
-      <option name="METHOD_NAME" value="testConstuctor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SmartWatchTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment2" />
       <extension name="coverage">
@@ -136,21 +130,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WearableDeviceTest.getInsurancePremium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WearableDeviceTest" />
+      <option name="METHOD_NAME" value="getInsurancePremium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WearableDeviceTest.getSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WearableDeviceTest" />
+      <option name="METHOD_NAME" value="getSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WearableDeviceTest.setSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WearableDeviceTest" />
+      <option name="METHOD_NAME" value="setSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WearableDeviceTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WearableDeviceTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SmartWatchTest.testToString" />
-        <item itemvalue="JUnit.SmartBandTest.setHeartRateMonitor" />
-        <item itemvalue="JUnit.SmartBandTest.testConstuctor" />
+        <item itemvalue="JUnit.WearableDeviceTest.setSize" />
+        <item itemvalue="JUnit.WearableDeviceTest.getSize" />
+        <item itemvalue="JUnit.WearableDeviceTest.getInsurancePremium" />
+        <item itemvalue="JUnit.WearableDeviceTest.testToString" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -198,6 +250,31 @@
     <MESSAGE value="4/11 write basic codes for models" />
     <MESSAGE value="4/16" />
     <option name="LAST_COMMIT_MESSAGE" value="4/16" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/controllers/TechnologyDeviceAPITest.java</url>
+          <line>158</line>
+          <properties class="controllers.TechnologyDeviceAPITest.SearchingMethods" method="isValidId">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

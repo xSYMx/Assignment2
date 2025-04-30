@@ -22,12 +22,21 @@ class WearableDeviceTest {
     void tearDown() {
         smartWatch=null;
     }
+    @Test
+    void getMaterial() {
+        assertEquals("steel", smartWatch.getMaterial());
+    }
 
     @Test
     void setMaterial() {
         smartWatch.setMaterial("Titanium");
         assertEquals("Titanium",smartWatch.getMaterial());
     }
+    @Test
+    void getSize() {
+        assertEquals("Large", smartWatch.getSize());
+    }
+
 
     @Test
     void setSize() {
@@ -41,9 +50,13 @@ class WearableDeviceTest {
         assertEquals(expected,smartWatch.toString());
     }
 
+
+
     @Test
     void getInsurancePremium() {
         double expectedPremium=100*.01;
        assertEquals(expectedPremium,smartWatch.getInsurancePremium());
-}
+    }
+
+
 }

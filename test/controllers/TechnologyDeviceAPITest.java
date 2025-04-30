@@ -29,7 +29,7 @@ class TechnologyDeviceAPITest {
             populatedDevices.load();
             emptyDevices.load();
         } catch (Exception e) {
-            System.out.println(e);
+            fail("when something goes wrong:" + e.getMessage());
         }
     }
 
@@ -73,12 +73,13 @@ class TechnologyDeviceAPITest {
             Tablet tablet = new Tablet("iPad Air", 799.99, apple, "A12345", "M1 Chip", 128, "iOS");
             emptyDevices.addTechnologyDevice(tablet);
 
-            Tablet updatedTablet = new Tablet("iPad Air", 899.99, apple, "A12345", "M2 Chip", 256, "iOS");
-            assertTrue(emptyDevices.updateTablet("iPad Air", updatedTablet));
+            Tablet updatedTablet = new Tablet("iPad Air Updated", 899.99, apple, "A12345", "M2 Chip", 256, "iOS");
+            assertTrue(emptyDevices.updateTablet("A12345", updatedTablet));
 
-            Technology retrievedTech = emptyDevices.getTechnologyDeviceById("iPad Air");
+            Technology retrievedTech = emptyDevices.getTechnologyDeviceById("A12345");
             assertNotNull(retrievedTech);
             assertEquals("iPad Air", retrievedTech.getModelName());
+            assertEquals("M2 Chip", ((Tablet) retrievedTech).getProcessor());
         }
 
         @Test
@@ -96,8 +97,9 @@ class TechnologyDeviceAPITest {
             Tablet tablet = new Tablet("iPad Pro", 799.99, apple, "A12345", "M1 Chip", 128, "iOS");
             emptyDevices.addTechnologyDevice(tablet);
 
-            Technology deletedTech = emptyDevices.deleteTechnologyById("iPad Pro");
+            Technology deletedTech = emptyDevices.deleteTechnologyById("A12345");
             assertNotNull(deletedTech);
+            assertNull(emptyDevices.getTechnologyDeviceById("A12345"));
             assertEquals(0, emptyDevices.numberOfTechnologyDevices());
         }
     }
@@ -111,15 +113,21 @@ class TechnologyDeviceAPITest {
             assertTrue(emptyDevices.listAllTechnologyDevices().toLowerCase().contains("no technology devices"));
         }
 
+
         @Test
         void listAllReturnsTechnologyDevicesStoredWhenArrayListHasTechnologyDevicesStored() {
-            assertEquals(4, populatedDevices.numberOfTechnologyDevices());
-            String populatedDeviceStr = populatedDevices.listAllTechnologyDevices();
+            int count = populatedDevices.numberOfTechnologyDevices();
+            assertEquals(4, count, "Expected exactly 4 devices to be loaded from the file");
 
-            assertTrue(populatedDeviceStr.contains("ID: A123"));
-            assertTrue(populatedDeviceStr.contains("ID: W1234"));
-            assertTrue(populatedDeviceStr.contains("ID: T1223"));
-            assertTrue(populatedDeviceStr.contains("ID: W3535"));
+            String result = populatedDevices.listAllTechnologyDevices();
+
+            System.out.println("Actual output:");
+            System.out.println(result); 
+
+            assertTrue(result.contains("id='A123'"));
+            assertTrue(result.contains("id='W1234'"));
+            assertTrue(result.contains("id='T1223'"));
+            assertTrue(result.contains("id='W3535'"));
         }
 
         @Test
@@ -153,7 +161,7 @@ class TechnologyDeviceAPITest {
             emptyDevices.addTechnologyDevice(tablet);
 
             assertFalse(emptyDevices.isValidId("Galaxy Tab S7"));
-            assertTrue(emptyDevices.isValidId("iPad Pro"));
+            assertTrue(emptyDevices.isValidId("A12345"));
         }
 
         @Test
