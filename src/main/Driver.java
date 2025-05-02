@@ -394,8 +394,6 @@ public class Driver {
         }
     }
 
-//todo update methods counting methods
-
 
 
 
@@ -403,7 +401,6 @@ public class Driver {
         //  General Menu Items
         //---------------------
 
-//TODO - write all the methods that are called from your menu
 
 
     private void searchManufacturers() {

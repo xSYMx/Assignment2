@@ -51,9 +51,9 @@ public abstract class Technology {
 
     @Override
     public String toString() {
-        return "price:" + price + '\''+
-                "id:" + id + '\'' +
-                "modelName:" + modelName + '\'' +
-                "manufacturer: " + manufacturer ;
+        return "Model:" + modelName + "," +
+                "Price:" + price + "," +
+                manufacturer + "," +
+                "ID:" + id ;
     }
 }

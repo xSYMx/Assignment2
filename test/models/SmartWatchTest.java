@@ -13,7 +13,7 @@ class SmartWatchTest {
     @BeforeEach
     void setUp() {
         Manufacturer manufacturer=new Manufacturer("TestManufacturer",1);
-        smartWatch=new SmartWatch("TestSmartWatch",100,manufacturer,"123","steel","Large","OLED");
+        smartWatch=new SmartWatch("TestSmartWatch",100,manufacturer,"123","Steel","Large","OLED");
 
     }
 
@@ -61,10 +61,10 @@ class SmartWatchTest {
     @Test
     void testToString() {
         smartWatch.setDisplayType("OLED");
-        String expectedOutput=String.format("Model:TestSmartWatch,Price:100,Manufacturer: TestManufacturer, ID: 123, Material:  Steel, Size: Large, Display Type: OLED");
+        String expectedOutput=String.format("Model:TestSmartWatch,Price:100.0,Manufacturer: TestManufacturer, numEmployees: 1,ID:123, Material: Steel, Size: Large, Display Type: OLED");
         assertEquals(expectedOutput,smartWatch.toString());
         smartWatch.setDisplayType(null);
-        expectedOutput = String.format("Model: TestSmartWatch, Price: 100, Manufacturer: TestManufacturer, ID:123, Material:  Steel, Size: Large, Display Type: null");
+        expectedOutput = String.format("Model:TestSmartWatch,Price:100.0,Manufacturer: TestManufacturer, numEmployees: 1,ID:123, Material: Steel, Size: Large, Display Type: null");
         assertEquals(expectedOutput, smartWatch.toString());
     }
 }

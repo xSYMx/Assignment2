@@ -7,22 +7,17 @@ import utils.ISerializer;
 import java.io.*;
 import java.util.*;
 
-//TODO - ensure that this class implements iSerializer
 public class TechnologyDeviceAPI implements ISerializer {
 
-    //TODO - create 2 fields
 
     private ArrayList<Technology> technologyList;
     private File file;
 
-    //TODO - create constructor
 
     public TechnologyDeviceAPI(File file){
         this.technologyList = new ArrayList<>();
         this.file = file;
     }
-
-    //TODO - CRUD Methods
 
     public boolean addTechnologyDevice(Technology technology){
         return technologyList.add(technology);

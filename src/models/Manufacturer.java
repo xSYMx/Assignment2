@@ -40,9 +40,7 @@ public class Manufacturer {
 
     @Override
     public String toString() {
-        return "Manufacturer{" +
-                "manufacturerName='" + manufacturerName + '\'' +
-                ", numEmployees=" + numEmployees + (numEmployees==1 ? " employee" : " employees")+
-                '}';
+        return "Manufacturer: " + manufacturerName +
+                ", numEmployees: " + numEmployees ;
     }
 }
